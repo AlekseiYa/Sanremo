@@ -164,30 +164,44 @@ main {
     }
 
     & .index_box3 {
-        width: 1920px;
-        height: 5155px;
         margin: auto;
+        width: 1736px;
+        height: 585px;
         display: flex;
         flex-direction: column;
         gap: 100px;
 
-        & h1 {
-            text-align: center;
+        & .box3_h1 {
+            width: 300px;
+            height: 59px;
+            flex-shrink: 0;
+            margin: auto;
+            
+            & h1{
+                text-align: center;
+            }
+
         }
+
+        & .img_control {
+
+            margin: auto;
+        }
+
 
         & .box3_content {
 
             display: flex;
             gap: 24px;
-            margin-left: 80px;
-            
+
+
 
             & .fon_color1 {
-
+                margin: auto;
                 width: 500px;
                 height: 276px;
                 flex-shrink: 0;
-                background: #018ABE;
+                background: #0188be7a;
                 border-radius: 10px;
 
                 & .box3_text1 {
@@ -197,10 +211,12 @@ main {
                     font-weight: 300;
                     line-height: 14px;
                     margin: auto;
+                    color: rgba(255, 255, 255, 0.447);
                 }
 
 
                 & .name_1 {
+                    color: rgba(255, 255, 255, 0.403);
                     margin: auto;
                     width: 410px;
                     font-size: 16px;
@@ -213,6 +229,7 @@ main {
             }
 
             & .fon_color2 {
+
                 width: 636px;
                 height: 350px;
                 flex-shrink: 0;
@@ -240,13 +257,15 @@ main {
             }
 
             & .fon_color3 {
+                margin: auto;
                 width: 500px;
                 height: 276px;
                 flex-shrink: 0;
                 border-radius: 10px;
-                background-color: #018ABE;
+                background-color: #0188be56;
 
-                & .name_3{
+                & .name_3 {
+                    color: rgba(255, 255, 255, 0.434);
                     margin: auto;
                     width: 410px;
                     font-size: 16px;
@@ -255,19 +274,106 @@ main {
                     line-height: 22.4px;
                 }
 
-                & .box3_text3{
+                & .box3_text3 {
+                    color: rgba(255, 255, 255, 0.402);
                     margin: auto;
                     width: 410px;
                     font-size: 10px;
                     font-style: normal;
                     font-weight: 300;
-                    line-height: 14px; 
+                    line-height: 14px;
 
                 }
             }
 
         }
 
+    }
+
+    & .index_box4{
+        flex-direction: column;
+       /* justify-content: center; */
+        width: 1076px;
+        height: 1024px;
+        flex-shrink: 0;
+        display: flex;
+        margin: auto;
+       
+
+        & .box4_h1{
+            margin: auto;
+            width: 389px;
+            height: 59px;
+            flex-shrink: 0;
+
+            h1{
+                text-align: center;
+            }
+        }
+    }
+
+    & .box4_content{
+        /* flex-direction: column; */
+        display: flex;
+        
+
+        & .box4_text1{
+            
+            margin: auto;
+            width: 466px;
+            height: 234px;
+            flex-shrink: 0;
+            margin-right: 100px;
+            
+
+            & p{
+                margin-top: 30px;
+                
+            }
+
+            
+        }
+
+        & .box4_img{
+            
+            border-radius: 10px;
+            margin-top: 50px;
+            width: 526px;
+            height: 400px;
+            flex-shrink: 0;
+            background-image: url(../img/img_box4.png);
+        }
+    }
+
+    & .box4_content2{
+        /* flex-direction: column; */
+        display: flex;
+        
+        
+
+        & .box4_img2{
+            /* margin-left: 50px; */
+            margin-top: 140px;
+            display: flex;
+            width: 526px;
+            height: 365px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background-image: url(../img/img_box4.png);
+
+        }
+
+        & .box4_text2{
+            
+            margin-top: 140px;
+            margin-left: 70px;
+
+            & p{
+                margin-top: 30px;
+            }
+            
+            
+        }
     }
 
 }
