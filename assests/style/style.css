@@ -176,8 +176,8 @@ main {
             height: 59px;
             flex-shrink: 0;
             margin: auto;
-            
-            & h1{
+
+            & h1 {
                 text-align: center;
             }
 
@@ -290,52 +290,52 @@ main {
 
     }
 
-    & .index_box4{
+    & .index_box4 {
         flex-direction: column;
-       /* justify-content: center; */
+        /* justify-content: center; */
         width: 1076px;
         height: 1024px;
         flex-shrink: 0;
         display: flex;
         margin: auto;
-       
 
-        & .box4_h1{
+
+        & .box4_h1 {
             margin: auto;
             width: 389px;
             height: 59px;
             flex-shrink: 0;
 
-            h1{
+            h1 {
                 text-align: center;
             }
         }
     }
 
-    & .box4_content{
+    & .box4_content {
         /* flex-direction: column; */
         display: flex;
-        
 
-        & .box4_text1{
-            
+
+        & .box4_text1 {
+
             margin: auto;
             width: 466px;
             height: 234px;
             flex-shrink: 0;
             margin-right: 100px;
-            
 
-            & p{
+
+            & p {
                 margin-top: 30px;
-                
+
             }
 
-            
+
         }
 
-        & .box4_img{
-            
+        & .box4_img {
+
             border-radius: 10px;
             margin-top: 50px;
             width: 526px;
@@ -345,13 +345,13 @@ main {
         }
     }
 
-    & .box4_content2{
+    & .box4_content2 {
         /* flex-direction: column; */
         display: flex;
-        
-        
 
-        & .box4_img2{
+
+
+        & .box4_img2 {
             /* margin-left: 50px; */
             margin-top: 140px;
             display: flex;
@@ -363,21 +363,21 @@ main {
 
         }
 
-        & .box4_text2{
-            
+        & .box4_text2 {
+
             margin-top: 140px;
             margin-left: 70px;
 
-            & p{
+            & p {
                 margin-top: 30px;
             }
-            
-            
+
+
         }
     }
 
 
-    & .index_box5{
+    & .index_box5 {
         flex-direction: column;
         display: flex;
         margin: auto;
@@ -385,34 +385,75 @@ main {
         height: 614px;
         flex-shrink: 0;
 
-        & h1{
+        & h1 {
             text-align: center;
         }
 
-        & .box5_h1{
-            /* width: 518px;
-            height: 59px; */
-            flex-shrink: 0; 
+        & .box5_h1 {
+            width: 518px;
+            height: 59px;
+            flex-shrink: 0;
             margin: auto;
 
-            & h1{
+            & h1 {
                 text-align: center;
             }
         }
 
-        & .box5_cont{
-            
+        & .box5_cont {
+            margin-top: 140px;
             display: flex;
             flex-direction: column;
+            font-size: 18px;
 
-            & .box5_text{
+            & .box5_text {
+                width: 416px;
+                height: 250px;
+                flex-shrink: 0;
+                display: flex;
 
-                margin-top: 200px;
+                & .sum{
+                    margin-left: 100px;
+                }
+                
+                
+                & ul{
+                    
+
+                    & li{
+                        list-style-type: none;
+
+                    }
+
+                    & li::before{
+                        content: url(../img/img_left_Rectangle.png);
+                        margin-right: 20px;
+                        
+                    }
+                }
             }
 
+           
 
-            & .box5_img{
-                background-image: url(../img/Box5_img.png);
+
+            & .box5_img {
+                
+                width: 526px;
+                height: 455px;
+                flex-shrink: 0;
+                
+                
+                
+                & .img_css{
+                    flex-direction: column;
+                    display: flex;
+                    width: 526px;
+                    height: 396px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background-image: url(../img/Box5_img.png);
+
+                }
             }
 
 
@@ -423,7 +464,7 @@ main {
 }
 
 .newbox1 {
-    display: flex;
+    /* display: flex; */
     gap: 24px;
     flex-direction: column;
 
