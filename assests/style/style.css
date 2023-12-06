@@ -376,6 +376,50 @@ main {
         }
     }
 
+
+    & .index_box5{
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+        width: 1076px;
+        height: 614px;
+        flex-shrink: 0;
+
+        & h1{
+            text-align: center;
+        }
+
+        & .box5_h1{
+            /* width: 518px;
+            height: 59px; */
+            flex-shrink: 0; 
+            margin: auto;
+
+            & h1{
+                text-align: center;
+            }
+        }
+
+        & .box5_cont{
+            
+            display: flex;
+            flex-direction: column;
+
+            & .box5_text{
+
+                margin-top: 200px;
+            }
+
+
+            & .box5_img{
+                background-image: url(../img/Box5_img.png);
+            }
+
+
+
+        }
+    }
+
 }
 
 .newbox1 {
