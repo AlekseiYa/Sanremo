@@ -113,6 +113,16 @@ main {
             text-align: center;
         }
 
+        h1::before{
+            content: url(../img/img_left_Rectangle.png);
+            padding: 20px;
+        }
+
+        h1::after{
+            content: url(../img/img_right_Rectangle.png);
+            padding: 20px;
+        }
+
         & .index_box2_cont {
             display: flex;
             gap: 24px;
@@ -176,6 +186,16 @@ main {
 
             & h1 {
                 text-align: center;
+            }
+
+            h1::before{
+                content: url(../img/img_left_Rectangle.png);
+                padding: 20px;
+            }
+
+            h1::after{
+                content: url(../img/img_right_Rectangle.png);
+                padding: 20px;
             }
 
         }
@@ -306,6 +326,16 @@ main {
             h1 {
                 text-align: center;
             }
+
+            h1::before{
+                content: url(../img/img_left_Rectangle.png);
+                padding: 20px;
+            }
+
+            h1::after{
+                content: url(../img/img_right_Rectangle.png);
+                padding: 20px;
+            }
         }
     }
 
@@ -388,6 +418,17 @@ main {
             & h1 {
                 text-align: center;
             }
+            h1::before{
+                content: url(../img/img_left_Rectangle.png);
+                padding: 45px;
+            }
+
+            h1::after{
+                content: url(../img/img_right_Rectangle.png);
+                padding: 45px;
+            }
+
+            
 
         }
 
@@ -395,7 +436,7 @@ main {
             margin-top: auto;
             display: flex;
 
-            /* flex-direction: column; */
+            
 
             & .box5_text {
                 margin: auto;
@@ -408,6 +449,11 @@ main {
                     font-style: normal;
                     font-weight: 400;
                     line-height: 22.2px
+                }
+                li::before{
+                    content:url(../img/img_left_Rectangle.png);
+                    padding: 20px;
+
                 }
             }
 
