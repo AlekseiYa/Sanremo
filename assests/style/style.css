@@ -518,20 +518,20 @@ main {
 
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
 
-    & .index_ft_box1{
+    & .index_ft_box1 {
         width: 1296px;
         height: 604px;
         flex-shrink: 0;
         margin: auto;
         display: flex;
-        
 
-        & .map{
+
+        & .map {
             flex-direction: column;
             display: flex;
             width: 856px;
@@ -540,19 +540,163 @@ footer{
             background: url(../img/box5_map.png);
         }
 
-        & .cont{
+        & .cont {
+            margin-left: 50px;
             display: flex;
             flex-direction: column;
 
-            & .ft_cont{
+            & .ft_cont {
                 width: 392px;
                 height: 290px;
                 flex-shrink: 0;
+                background-color: #018ABE;
+                border-radius: 10px;
+
+                h1 {
+                    margin-left: 45px;
+                    margin-top: 35px;
+
+                    width: 302px;
+                    color: white;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 33.6px
+                }
+
+                & .txt {
+
+                    
+                    margin-left: 25px;
+                    width: 302px;
+                    height: 100px;
+                    flex-shrink: 0;
+                    color: white;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18.9px;
+
+                    & p {
+                        margin-top: 21px;
+
+
+                    }
+
+                    & .loc1::before {
+                        padding: 20px;
+                        content: url(../img/loc1_.svg);
+                    }
+
+                    & .loc2::before {
+                        padding: 20px;
+                        content: url(../img/metro_logo.svg);
+                    }
+
+                    & .loc3::before {
+                        padding: 20px;
+                        content: url(../img/loc3_img.svg);
+                    }
+
+
+                }
+
+                & button {
+
+                    padding: 9px 15px;
+
+                    gap: 10px;
+                    margin-top: 30px;
+                    margin-left: 45px;
+                }
+            }
+
+            & .ft_cont1 {
+                width: 392px;
+                height: 290px;
+                flex-shrink: 0;
+                background-color: #018ABE;
+                margin-top: 24px;
+                border-radius: 10px;
+
+                h1 {
+                    margin-left: 45px;
+                    margin-top: 35px;
+
+                    width: 302px;
+                    color: white;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 33.6px
+                }
+
+                & .txt2{
+                    margin-left: 25px;
+                    width: 302px;
+                    height: 100px;
+                    flex-shrink: 0;
+                    color: white;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18.9px;
+
+                    & p {
+                        margin-top: 21px;
+
+
+                    }
+                    & .loc4::before{
+                        padding: 20px;
+                        content: url(../img/loc1_.svg);
+
+                    }
+
+                    & .loc5::before{
+                        padding: 20px;
+                        content: url(../img/metro_logo.svg);
+
+
+                    }
+
+                    & .loc6::before{
+                        padding: 20px;
+                        content: url(../img/loc3_img.svg);
+
+                    }
+                }
+
+                & button {
+
+                    padding: 9px 15px;
+
+                    gap: 10px;
+                    margin-top: 30px;
+                    margin-left: 45px;
+                }
+
             }
 
         }
 
-       
+
+    }
+
+
+    & .index_ft_box2{
+        width: 1296px;
+        height: 19px;
+        flex-shrink: 0;
+        margin: auto;
+        display: flex;
+        color: white;
+
+
+        & .two{
+            
+            text-align: right;
+        }
     }
 
 }
