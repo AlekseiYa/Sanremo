@@ -69,3 +69,24 @@
 #listNumber = (input('Введите черехзначное число '))
 #ret = (listNumber[::-1])
 #print(ret)
+
+#Модуль 1 Практическое задание 1 Задача 1
+
+#print(' Nothing\n will work\n unless you do')
+
+
+#Модуль 1 Практическое задание 1 Задача 2
+
+#print(' "Anyone who\n   stops\n      learning is old,\n         whether at twenty or eighty"\n                                 Henry Ford')
+ 
+
+#Модуль 1 Практическое задание 1 Задача 3
+
+entNumberOne = int(input('Введите первое число '))
+entNumberTwo = int(input('Введите второе число'))
+
+#summa = entNumberOne + entNumberTwo
+#raz = entNumberOne - entNumberTwo
+#proiz = entNumberOne * entNumberTwo
+
+#print('Сумма чисел ', summa, )#'Разница ', #raz, 'Произведение', #proiz )
