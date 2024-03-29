@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F3F3F3;
+
+}
+
+header {
+    width: 1440px;
+    height: 810px;
+    background-image: url(../img/MANU\ BAR.png);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    & .menu_bar {
+        position: fixed;
+        width: 165px;
+        height: 810px;
+        flex-shrink: 0;
+        flex-direction: column;
+        background-color: black;
+        
+        & .logo {
+            width: 94.565px;
+            height: 42.702px;
+            flex-shrink: 0;
+            background-image: url(../img/logo_heder.png);
+            margin: auto;
+            margin-top: 20px;
+
+
+
+        }
+
+        & .home {
+            text-align: center;
+            width: 165px;
+            height: 98px;
+            flex-shrink: 0;
+            color: #B6DCFF;
+            flex-direction: column;
+            margin-top: 70px;
+
+
+            & .img_h {
+                flex-direction: column;
+                margin: auto;
+                width: 33px;
+                height: 29.742px;
+                flex-shrink: 0;
+                background-image: url(../img/home_heder.png);
+
+
+            }
+
+
+            & p {
+                width: 45px;
+                height: 27px;
+                flex-direction: column;
+                flex-shrink: 0;
+                margin: auto;
+                font-size: 15px;
+
+
+            }
+
+
+        }
+
+        & .home:hover {
+            
+            background-color: #3C6C7F;
+
+        }
+
+
+
+        & .shop{
+            text-align: center;
+            width: 165px;
+            height: 98px;
+            flex-shrink: 0;
+            color: #B6DCFF;
+            flex-direction: column;
+
+            & .img_shop{
+                flex-direction: column;
+                margin: auto;
+                width: 33px;
+                height: 29.742px;
+                flex-shrink: 0;
+                background-image: url(../img/shop_heder.png);
+            }
+        }
+
+        & .blog{
+            text-align: center;
+            width: 165px;
+            height: 98px;
+            flex-shrink: 0;
+            color: #B6DCFF;
+            flex-direction: column;
+
+            & .img_blog{
+                flex-direction: column;
+                margin: auto;
+                width: 33px;
+                height: 29.742px;
+                flex-shrink: 0;
+                background-image: url(../img/blog_heder.png);
+            }
+
+        }
+
+        & .about{
+            text-align: center;
+            width: 165px;
+            height: 98px;
+            flex-shrink: 0;
+            color: #B6DCFF;
+            flex-direction: column;
+
+            & .img_about{
+                flex-direction: column;
+                margin: auto;
+                width: 33px;
+                height: 29.742px;
+                flex-shrink: 0;
+                background-image: url(../img/about_heder.png);
+            }
+        }
+
+        & .gallery{
+            text-align: center;
+            width: 165px;
+            height: 98px;
+            flex-shrink: 0;
+            color: #B6DCFF;
+            flex-direction: column;
+
+            & .img_gal{
+                flex-direction: column;
+                margin: auto;
+                width: 33px;
+                height: 29.742px;
+                flex-shrink: 0;
+                background-image: url(../img/galery_heder.png);
+            }
+
+        }
+
+        & .location{
+            text-align: center;
+            width: 165px;
+            height: 98px;
+            flex-shrink: 0;
+            color: #B6DCFF;
+            flex-direction: column;
+
+            & .img_loc{
+                flex-direction: column;
+                margin: auto;
+                width: 33px;
+                height: 29.742px;
+                flex-shrink: 0;
+                background-image: url(../img/loc_heder.png);
+            }
+        }
+
+
+    }
+
+    & .up_menu{
+        margin-left: 95px;
+        margin-top: 28px;
+        justify-content: center;
+        width: 1015px;
+        height: 25px;
+        flex-shrink: 0;
+        display: flex;
+        
+        
+        & .bloc1{
+            
+            width: 207px;
+            height: 25px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+
+            & ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: left;
+                gap: 69px;
+                color: white;
+            }
+
+            
+        }
+
+
+        & .bloc2{
+            justify-content: right;
+            flex-direction: column;
+            width: 399px;
+            height: 18px;
+            flex-shrink: 0;
+            display: flex;
+            
+
+            & ul{
+                justify-content: right;
+                display: flex;
+                gap: 63px;
+
+                & li{
+                    
+                    list-style-type: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+
+}
