@@ -82,11 +82,14 @@
 
 #Модуль 1 Практическое задание 1 Задача 3
 
-entNumberOne = int(input('Введите первое число '))
-entNumberTwo = int(input('Введите второе число'))
+#entNumberOne = int(input('Введите первое число '))
+#entNumberTwo = int(input('Введите второе число'))
 
 #summa = entNumberOne + entNumberTwo
 #raz = entNumberOne - entNumberTwo
 #proiz = entNumberOne * entNumberTwo
 
 #print('Сумма чисел ', summa, )#'Разница ', #raz, 'Произведение', #proiz )
+
+
+num34 = input('Введите число')
