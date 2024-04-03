@@ -295,22 +295,50 @@
 
 #Модуль 2 часть 3  Задача 3
 
-abonentCash = int(input('Введите стоимость разговора '))
-operationOne = input('Выберете оператор c которго идет звонок 1, 2, 3 ' )
-operationTwo = input('Выберете оператор принимающий звонок 1, 2, 3 ')
+#abonentCash = int(input('Введите стоимость разговора '))
+#operationOne = input('Выберете оператор c которго идет звонок 1, 2, 3 ' )
+#operationTwo = input('Выберете оператор принимающий звонок 1, 2, 3 ')
 
-count = abs(abonentCash)
+#count = abs(abonentCash)
 
-a = 2
-b = 3
-c = 5
+#a = 2
+#b = 3
+#c = 5
 
-if operationOne == '1' and operationTwo == '2':
-    count -= a
-    print ('Стоимость звонка', a, 'руб', 'Остаток', count, 'руб')
-elif operationOne == '2' and operationTwo == '1':
-    count -= b
-    print ('Стоимость звонка', b, 'руб', 'Остаток', count, 'руб')
-elif operationOne == '3' and operationTwo == '1':
-    count -= c
-    print ('Стоимость звонка', c, 'руб', 'Остаток', count, 'руб')
+#if operationOne == '1' and operationTwo == '2':
+#    count -= a
+#    print ('Стоимость звонка', a, 'руб', 'Остаток', count, 'руб')
+#elif operationOne == '2' and operationTwo == '1':
+#    count -= b
+#    print ('Стоимость звонка', b, 'руб', 'Остаток', count, 'руб')
+#elif operationOne == '3' and operationTwo == '1':
+#    count -= c
+#    print ('Стоимость звонка', c, 'руб', 'Остаток', count, 'руб')
+
+
+#Модуль 2 часть 3  Задача 4
+
+managerOne = int(input('Продажи первого менеджера '))
+managerTwo = int(input('Продажи второго менеджера '))
+managerThree = int(input('Продажи третьего менеджера '))
+cash = 200
+
+if 0 < managerOne < 500:
+    a = ((managerOne * 3) // 100) + cash
+elif 0 < managerTwo < 500:
+    b = ((managerTwo * 3) // 100) + cash
+elif 0 < managerThree < 500:
+    c = ((managerThree * 3) // 100) + cash
+elif 500 == managerOne < 1000:
+    e = ((managerOne * 5) // 100) + cash
+elif 500 == managerTwo < 1000:
+    r = ((managerOne * 5) // 100) + cash
+elif 500 == managerTwo < 1000:
+    t = ((managerTwo * 5) // 100) + cash
+elif 500 == managerThree < 1000:
+    y = ((managerThree * 5) // 100) + cash
+
+
+
+if 0 < managerOne < 500 or 500 == managerOne < 1000 or managerOne > 1000:
+    
