@@ -318,27 +318,65 @@
 
 #Модуль 2 часть 3  Задача 4
 
-managerOne = int(input('Продажи первого менеджера '))
-managerTwo = int(input('Продажи второго менеджера '))
-managerThree = int(input('Продажи третьего менеджера '))
-cash = 200
+#managerOne = int(input('Продажи первого менеджера '))
+#managerTwo = int(input('Продажи второго менеджера '))
+#managerThree = int(input('Продажи третьего менеджера '))
+#cash = 200
 
-if 0 < managerOne < 500:
-    a = ((managerOne * 3) // 100) + cash
-elif 0 < managerTwo < 500:
-    b = ((managerTwo * 3) // 100) + cash
-elif 0 < managerThree < 500:
-    c = ((managerThree * 3) // 100) + cash
-elif 500 == managerOne < 1000:
-    e = ((managerOne * 5) // 100) + cash
-elif 500 == managerTwo < 1000:
-    r = ((managerOne * 5) // 100) + cash
-elif 500 == managerTwo < 1000:
-    t = ((managerTwo * 5) // 100) + cash
-elif 500 == managerThree < 1000:
-    y = ((managerThree * 5) // 100) + cash
+#if 0 < managerOne < 500:
+#    a = ((managerOne * 3) // 100) + cash
+#elif 0 < managerTwo < 500:
+#    b = ((managerTwo * 3) // 100) + cash
+#elif 0 < managerThree < 500:
+#    c = ((managerThree * 3) // 100) + cash
+#elif 500 == managerOne < 1000:
+#    e = ((managerOne * 5) // 100) + cash
+#elif 500 == managerTwo < 1000:
+#    r = ((managerOne * 5) // 100) + cash
+#elif 500 == managerTwo < 1000:
+#    t = ((managerTwo * 5) // 100) + cash
+#elif 500 == managerThree < 1000:
+#    y = ((managerThree * 5) // 100) + cash
+
+#Модуль 3 часть 1  Задача 1
 
 
+#oneNumber = int(input('Введите число 1 '))
+#twoNumber = int(input('Введите число 2 '))
 
-if 0 < managerOne < 500 or 500 == managerOne < 1000 or managerOne > 1000:
-    
+#for num in range(oneNumber, twoNumber):
+#   if num % 7 == 0:
+#      print('кратные 7-ми', num)
+
+
+#Модуль 3 часть 1  Задача 2
+
+numOne = int(input('Введите число 1 ' ))
+numTwo = int(input('Введите число 2 ' ))
+
+
+for n in range(numOne,numTwo + 1):
+    print(n)
+for num in range(numOne, numTwo + 1):
+   print(num)
+for num1 in range(numOne,numTwo +1):
+    if num1 % 7 == 0:
+        print() 
+for num2 in range(numOne,numTwo + 1):
+    if num2 % 5 == 0:
+        print()
+
+    #Модуль 3 часть 1  Задача 3
+        
+range1 = int(input('введите число 1 '))
+range2 = int(input('введите число 2 '))
+
+for i in range(range1,range2):
+    if i % 3 == 0:
+        print('Fizz')
+    elif i % 5 == 0:
+        print('Buzz')
+    elif i % 3 == 0 and i % 5 == 0:
+        print('Fizz Buzz')
+    elif i % 3 != 0 and i % 5 != 0:
+        print(i)
