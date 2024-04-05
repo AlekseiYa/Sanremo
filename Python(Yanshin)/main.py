@@ -417,23 +417,52 @@
 #print(sum)
 
 
-#Модуль 3 часть 2  Задача 3
-enterNumber = int(input('Введите число '))
-while True:
-    if enterNumber > 0:
-        print('«Number is positive»')
-        enterNumber = int(input('Введите число '))
-    elif enterNumber < 0:
-        print('«Number is negative»')
-        enterNumber = int(input('Введите число '))
-    elif enterNumber == 0:
-        print('«Number is equal to zero»')
-        enterNumber = int(input('Введите число '))
-    else:
-       if enterNumber == 7:
-        print('Good bye') 
-        break   
+#Модуль 3 часть 2  Задача 3 ???????
+#enterNumber = int(input('Введите число '))
+#while True:
+#    if enterNumber > 0:
+#        print('«Number is positive»')
+#        enterNumber = int(input('Введите число '))
+#    elif enterNumber < 0:
+#        print('«Number is negative»')
+#        enterNumber = int(input('Введите число '))
+#    elif enterNumber == 0:
+#        print('«Number is equal to zero»')
+#       enterNumber = int(input('Введите число '))
+#    else:
+#       if enterNumber == 7:
+#        print('Good bye') 
+#        break   
            
+
+
+#Модуль 3 часть 2  Задача 4 ???
+
+#num = int(input('Введите число '))
+
+
+#counterMin = 0
+#counterMax = 0
+
+#Модуль 3 часть 3  Задача 1 
+
+numberX = int(input('Введите число 1 '))
+numberY = int(input('Введите число 2 '))
+summ = numberX ** numberY
+
+print(summ)
+
+
+
+
+#Модуль 3 часть 4  Задача  ???
+#rangeOne = int(input('Введите первое число '))
+#rangeTwo = int(input('Введите второе число '))
+
+#for n in range(rangeOne,rangeTwo):
+#    if n // n and n // 1:
+#        print(n)
+
 
 
 
