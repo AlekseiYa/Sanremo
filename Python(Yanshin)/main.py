@@ -351,32 +351,98 @@
 
 #Модуль 3 часть 1  Задача 2
 
-numOne = int(input('Введите число 1 ' ))
-numTwo = int(input('Введите число 2 ' ))
+#numOne = int(input('Введите число 1 ' ))
+#numTwo = int(input('Введите число 2 ' ))
 
 
-for n in range(numOne,numTwo + 1):
-    print(n)
-for num in range(numOne, numTwo + 1):
-   print(num)
-for num1 in range(numOne,numTwo +1):
-    if num1 % 7 == 0:
-        print() 
-for num2 in range(numOne,numTwo + 1):
-    if num2 % 5 == 0:
-        print()
+#for n in range(numOne,numTwo + 1):
+#    print(n)
+#for num in range(numTwo, numOne - 1, - 1):
+#   print(num)
+#for num1 in range(numOne,numTwo +1):
+#    if num1 % 7 == 0:
+#        print() 
+#counter = 0
+#for num2 in range(numOne,numTwo + 1):
+#    if num2 % 5 == 0:
+#       counter += 1
+#print(counter)
 
     #Модуль 3 часть 1  Задача 3
         
-range1 = int(input('введите число 1 '))
-range2 = int(input('введите число 2 '))
+#range1 = int(input('введите число 1 '))
+#range2 = int(input('введите число 2 '))
 
-for i in range(range1,range2):
-    if i % 3 == 0:
-        print('Fizz')
-    elif i % 5 == 0:
-        print('Buzz')
-    elif i % 3 == 0 and i % 5 == 0:
-        print('Fizz Buzz')
-    elif i % 3 != 0 and i % 5 != 0:
-        print(i)
+#for i in range(range1,range2):
+#    if i % 3 == 0:
+#        print('Fizz')
+#    elif i % 5 == 0:
+#        print('Buzz')
+#    elif i % 3 == 0 and i % 5 == 0:
+#        print('Fizz Buzz')
+#    elif i % 3 != 0 and i % 5 != 0:
+#        print(i)
+
+
+#Модуль 3 часть 2  Задача 1
+
+
+#number1 = int(input('Введите число 1 '))
+#number2 = int(input('введите число 2 '))
+#counter = 0
+
+#for n in range (number1,number2):
+#    if n % 2 == 0:
+#       counter += 1
+#print(counter)
+
+#for a in range(number1,number2):
+#    if a % 2 != 0:
+#        counter += 1
+#print(counter)
+
+#for c in range(number1,number2):
+#    if c % 9 == 0:
+#        counter += 1
+#print(counter)
+
+#sum = (n + a + c )// 3
+#print(sum)
+
+#Модуль 3 часть 2  Задача 2
+
+#dlinna = int(input('Введите длину линии '))
+#simbol = input('Выберет симовол ')
+#sum = (simbol + "\n") * dlinna
+#print(sum)
+
+
+#Модуль 3 часть 2  Задача 3
+enterNumber = int(input('Введите число '))
+while True:
+    if enterNumber > 0:
+        print('«Number is positive»')
+        enterNumber = int(input('Введите число '))
+    elif enterNumber < 0:
+        print('«Number is negative»')
+        enterNumber = int(input('Введите число '))
+    elif enterNumber == 0:
+        print('«Number is equal to zero»')
+        enterNumber = int(input('Введите число '))
+    else:
+       if enterNumber == 7:
+        print('Good bye') 
+        break   
+           
+
+
+
+
+
+
+
+
+
+
+    
+
