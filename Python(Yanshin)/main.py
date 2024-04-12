@@ -417,61 +417,330 @@
 #print(sum)
 
 
-#Модуль 3 часть 2  Задача 3 ???????
-#enterNumber = int(input('Введите число '))
+#Модуль 3 часть 2  Задача 3 
+
 #while True:
-#    if enterNumber > 0:
-#        print('«Number is positive»')
-#        enterNumber = int(input('Введите число '))
+#enterNumber = int(input('Введите число '))
+#    if enterNumber > 0 and eterNumber != 7:
+#        print('«Number is positive»')  
 #    elif enterNumber < 0:
-#        print('«Number is negative»')
-#        enterNumber = int(input('Введите число '))
+#        print('«Number is negative»')     
 #    elif enterNumber == 0:
-#        print('«Number is equal to zero»')
-#       enterNumber = int(input('Введите число '))
-#    else:
-#       if enterNumber == 7:
+#        print('«Number is equal to zero»')  
+#    elif enterNumber == 7:
 #        print('Good bye') 
 #        break   
            
 
 
-#Модуль 3 часть 2  Задача 4 ???
+#Модуль 3 часть 2  Задача 4 
 
-#num = int(input('Введите число '))
+#sum = 0
+#min = None
+#max = None
 
-
-#counterMin = 0
-#counterMax = 0
+#while True:
+#    num = int(input('Введите число '))
+#    if num == 7:
+#        print('Good bye')
+#        break
+#    if min==None and max==None:
+#        min = num
+#        max = num
+#    if num > max:
+#        max = num
+#    if num < min:
+#        min = num
+#    sum += num
+#    print('Сумма ', sum, 'Минимум' ,min,'Максимум', max )
 
 #Модуль 3 часть 3  Задача 1 
 
-numberX = int(input('Введите число 1 '))
-numberY = int(input('Введите число 2 '))
-summ = numberX ** numberY
+#numberX = int(input('Введите число 1 '))
+#numberY = int(input('Введите число 2 '))
+#summ = numberX ** numberY
 
-print(summ)
-
-
+#print(summ)
 
 
-#Модуль 3 часть 4  Задача  ???
-#rangeOne = int(input('Введите первое число '))
-#rangeTwo = int(input('Введите второе число '))
+#Модуль 3 часть 3  Задача 2
 
-#for n in range(rangeOne,rangeTwo):
-#    if n // n and n // 1:
-#        print(n)
+#counter = 0
+
+#for n in range(100,999 +1):
+#    n = str(n)
+#    if n[0] == n[1] or n[0] == n[2] or n[1] == n[2]:
+#        counter += 1
+#print(counter)
+
+#Модуль 3 часть 3  Задача 3
+
+#coont = 0
+
+#for n in range(100,999):
+#    n = str(n)
+#    if n[0] != n[1] or n[0] != n[2] or n[1] != n[2]:
+#        coont += 1
+#for n in range(1000, 9999 +1):
+#    n = str(n)
+ #   if n[0] != n[1] or n[0] != n[2] or n[0] != n[3] or n[1] != [2] or n[1] != n[3] or n[2] != n[3]:
+ #       coont += 1
+#print(coont)
+
+#Модуль 3 часть 3  Задача 4
+
+#numOne = int(input('Введите число '))
+
+#tail = ''
+
+#while numOne:
+#    if not (numOne%10 == 3 or numOne%10 == 6):
+#        tail = str(numOne%10) + tail
+#    numOne //= 10
+#print(tail)
+
+#Модуль 3 часть 4  Задача 1????
+
+
+# rangeOne = int(input('Ввеите начало диапозона '))
+# rangeTwo = int(input('Ввеите конец диапозона '))
+  
+
+# for num in range(rangeOne,rangeTwo+1):
+#     for num2 in range(rangeOne,rangeTwo+1):
+#         if num % num2:
+        
+
+        
+
+
+
+#Модуль 3 часть 4  Задача 2
+
+
+# for n in range(1,10 +1):
+#     for j in range(1,10 +1):
+#         print(n * j, end='\t')
+#     print('\n')
+
+
+
+#Модуль 3 часть 4  Задача 3
+
+
+# rangeOne = int(input('Вверхняя граница диапазона '))
+# rangeTwo = int(input('Введите нижнию границу диапазона '))
+
+# for n in range(1, 10 +1):
+#     for j in range(rangeOne,rangeTwo +1):
+#         print(n * j, end='\t')
+#     print('\n')
+
+
+
+#Модуль 3 часть 4  Задача 4 ???
 
 
 
 
+# ПЗ Модуль 1 часть 3 Задание 1
 
 
 
+# myNum = int(input('Введите 2х значное число '))
+
+# a = myNum % 10
+# b = myNum // 10
+# print(b,'\n',a)
+
+
+# ПЗ Модуль 1 часть 3 Задание 2
+
+# myNum = int(input('Введите 3х значное число '))
+
+# a = myNum % 10
+# b = myNum % 100 // 10
+# c = myNum // 100
+# sum = a+b+c
+# print('\n',c,'\n',b,'\n',a)
+# print(sum)
+
+
+# ПЗ Модуль 1 часть 3 Задание 3
+
+# myNumber1 = input('введите число 1 ')
+# myNumber2 = input('введите число 2 ')
+
+# concr = myNumber1 + myNumber2
+
+# print(concr)
+
+# ПЗ Модуль 1 часть 3 Задание 4
+
+
+# myCel = int(input('Введите градус цельсия '))
+
+# myFa = ((myCel * 9) % 5) + 32
+
+# print('Граус', myCel, 'Цельсия', 'Равен', myFa, 'Фарингейта')
 
 
 
+# ПЗ Модуль 2 часть 1 Задание 1
+
+# myNum = int(input('введите число '))
+
+# if myNum % 2 == 0:
+#     print(myNum, 'Even number.')
+# else:
+#     print(myNum, 'Odd number.')
+
+
+# ПЗ Модуль 2 часть 1 Задание 2
+
+
+# myNum = int(input('введите число '))
+
+# if myNum % 7 == 0:
+#     print(myNum,'Number is multiple 7')
+# else:
+#     if myNum % 7 != 0:
+#         print(myNum, 'Number is not multiple 7')
 
     
 
+# ПЗ Модуль 2 часть 1 Задание 3
+
+# myNumOne = int(input('введите число 1 '))
+# myNumTwo = int(input('введите число 2 '))
+
+# if myNumOne > myNumTwo:
+#     print('максимум ', myNumOne)
+# else:
+#     print('максиму', myNumTwo)
+
+
+# ПЗ Модуль 2 часть 1 Задание 4
+
+# myNumOne = int(input('введите число 1 '))
+# myNumTwo = int(input('введите число 2 '))
+
+# if myNumOne < myNumTwo:
+#     print('минум ', myNumOne)
+# else:
+#     print('миниму', myNumTwo)
+
+
+# ПЗ Модуль 2 часть 1 Задание 5
+
+
+# myNumOne = int(input('введите число 1 '))
+# myNumTwo = int(input('введите число 2 '))
+# opiration = input('Выберетие операцию (+, *, -, u) ')
+
+
+# if opiration == '+':
+#     sum = myNumOne + myNumTwo
+#     print('сумма равна ', sum)
+# elif opiration == '*':
+#     proiz = myNumOne * myNumTwo
+#     print('произведение ', proiz)
+# elif opiration == '-':
+#     raz = myNumOne - myNumTwo
+#     print('Разность ', raz)
+# elif opiration == 'u':
+#     aref = (myNumOne + myNumTwo) % 2
+#     print('Среднеаремитичесоке ', aref)
+
+    # ПЗ Модуль 2 часть 2 Задание 1
+
+
+# myTime = int(input('Введите время в секундах '))
+
+# opiration = input('Выберете в чем отобразть h,m,s ')
+
+# if opiration == 'h':
+#     hours = (86400 - myTime)//3600
+#     print('До полуночи останется ', hours, 'часов')
+# elif opiration == 'm':
+#     min = (86400 - myTime) // 60 
+#     print('До полуночи останется ', min, 'минут')
+# elif opiration == "s":
+#     sec = 86400 - myTime
+#     print('До полуночи останется ', sec, 'секунд')
+
+
+# ПЗ Модуль 2 часть 2 Задание 2
+
+
+
+# myD = int(input('ВВедиет диметр окружности '))
+# operator = input('Введите операцию s, l ')
+
+
+# if operator == 's':
+#     S = ((myD ** 2)// 4) * 3.14
+#     print('Площадь окружности равно ', S)
+# elif operator == 'l':
+#     L = 3.14 * myD
+#     print('Периметр окружности будет равен ', L)
+
+
+# ПЗ Модуль 2 часть 2 Задание 3
+
+
+# price = int(input('Введите стоимость приставки '))
+# quan = int(input('Введите кол-во приставок '))
+# saly = int(input('введите скидку '))
+
+# summ = ((price * quan)* saly) // 100 
+# sumSaly = price * quan - summ
+
+# print('Сумма заказа с учетом скидки будет ', sumSaly)
+
+
+
+# ПЗ Модуль 2 часть 2 Задание 4 ???
+
+# sizeGB = int(input('Введите размер файла в ГБ '))
+# speedNet = int(input('Введите скокрость  байт в секунду '))
+
+
+
+# ПЗ Модуль 2 часть 2 Задание 5
+
+# myTime = int(input('Введите колл-во часов '))
+
+# if myTime >0 and myTime < 6:
+#     print('Ночь')
+# elif myTime >= 6 and myTime < 13:
+#     print('Утро')
+# elif myTime >= 13 and myTime < 17:
+#     print('День')
+# else:
+#     print('Вечер')
+
+
+# ДЗ Модуль 4 Часть 1 Задача 1
+
+
+# myList = input('Введите текст ')
+
+
+# myList = myList.lower()
+# myList = myList.replace(' ', '')
+
+# if myList == myList[::-1]:
+#     print('Строка палиндром')
+# else:
+#     print('Страка не палинром')
+
+
+myText = input('введите текст ')
+
+myList = [input('Введите через пробел зарезервированые слова ').split(' ')]
+
+myList = str(myList)
+myList = myList.upper()
+
+print(myList)
