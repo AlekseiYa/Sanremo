@@ -736,11 +736,149 @@
 #     print('Страка не палинром')
 
 
-myText = input('введите текст ')
 
-myList = [input('Введите через пробел зарезервированые слова ').split(' ')]
+# ДЗ Модуль 4 Часть 1 Задача 2
 
-myList = str(myList)
-myList = myList.upper()
+# myText = input('введите текст ')
+# myList = input('Введите через пробел зарезервированые слова ').split()
 
-print(myList)
+# for word in myList:
+#     myText = myText.replace(word,str(word.upper()))
+# print(myText)
+
+
+# ДЗ Модуль 4 Часть 1 Задача 3
+
+# import re
+
+# myText = input('Введите текст ') 
+
+# newlist = re.split(r'[.!?...]+', myText)
+
+# count = 0
+
+# for char in myText:
+#     if char in '.!?':
+#         count += 1
+
+# print(f'В тексте {count} предложений')
+
+
+
+
+# ДЗ Модуль 4 Часть 2 Задача 1
+
+# import re
+
+# myText = input('Введите вырвжение ')
+# operation = input('Выберите операцию +, -, *, / ')
+
+# newList = re.split(r'[\D]', myText)
+
+# if operation == '+':
+#     sum = int(newList[0]) + int(newList[1])
+#     print(sum)
+# elif operation == '-':
+#     raz = int(newList[0]) - int(newList[1])
+#     print(raz)
+# elif operation == '*':
+#     proiz = int(newList[0]) * int(newList[1])
+#     print(proiz)
+# elif operation == '/':
+#     deli = int(newList[0]) / int(newList[1])
+#     print(deli)
+
+
+# ДЗ Модуль 4 Часть 2 Задача 2
+
+
+# my_str = input('Введите числа ').split()
+
+# min(my_str)
+# max(my_str)
+# coun = 0 
+# counz = 0
+# counO = 0
+# for n in my_str:
+#     n = int(n)
+#     if n > 0:
+#         coun += 1
+#     print('Положительных чисел ', coun)
+#     if n < 0:
+#         counz +=1
+#     print('отрицательных чисел ', counz)
+#     if n == 0:
+#         counO += 1
+#     print("Колл-во 0 ", counO )
+
+
+# Модуль 4 часть 3 задача 1
+
+# my_listOne = input('Введите список чисел ').split()
+# my_listTwo = input('Введите список чисел ').split()
+
+# max(my_listOne)
+# min(my_listOne)
+# max(my_listTwo)
+# min(my_listTwo)
+
+# print(my_listOne)
+# print(my_listTwo)
+
+# my_listThree = my_listOne + my_listTwo
+
+# print(my_listThree)
+
+# my_listThree = []
+
+# for num in my_listOne:
+#     if my_listOne.count(num) == 1:
+#         my_listThree.append(num)
+# for num2 in my_listTwo:
+#     if my_listTwo.count(num2) == 1:
+#         my_listThree.append(num2)
+# print(my_listThree)
+
+
+# for num_One in my_listOne:
+#     if my_listOne.count(num_One) != 1:
+#         my_listThree.append(num_One)
+# for num_two in my_listTwo:
+#     if my_listTwo.count(num_two) != 1:
+#         my_listThree.append(num_two)
+# print(my_listThree)
+
+
+# for nO in my_listOne:
+#     for n1 in my_listTwo:
+#         if nO == n1:
+#             my_listThree.append(nO)
+# print(my_listThree)
+
+# for n_one in my_listOne:
+#     if n_one == max(my_listOne):
+#         my_listThree.append(n_one)
+#     elif n_one == min(my_listOne):
+#         my_listThree.append(n_one)
+# for n_two in my_listTwo:
+#     if n_two == max(my_listTwo):
+#         my_listThree.append(n_two)
+#     elif n_two == min(my_listTwo):
+#         my_listThree.append(n_two)
+# print(my_listThree)
+
+
+# ПЗ Модуль 3 часть 1 задача 1
+
+# my_str = input('Введите строку ')
+
+# print(my_str[::-1])
+
+
+import re
+
+my_str = input('Введите строку ')
+
+word = re.search('[a-z]+', my_str)
+ 
+print(word)
