@@ -76,7 +76,7 @@
 #Модуль 1 Практическое задание 1 Задача 2
 
 #print(' "Anyone who\n   stops\n      learning is old,\n         whether at twenty or eighty"\n                                 Henry Ford')
- 
+
 #Модуль 1 Практическое задание 1 Задача 3
 
 #entNumberOne = int(input('Введите первое число '))
@@ -114,7 +114,7 @@
 #d = int(number1) // 100
 #e = int(number1) % 100 // 10
 #for a in number1[0:3:1]:
-   #print(a)
+#print(a)
 #print(d+e+c)
 
 #Модуль 1 часть 3  Задача 3
@@ -139,11 +139,11 @@
 #numberC = int(input('Введите число 3 '))
 #programm = input('Выберите действие + или * ')
 #if programm == "+":
-   # summ = numberA + numberB + numberC
-   # print('Сумма равна ', summ)
+# summ = numberA + numberB + numberC
+# print('Сумма равна ', summ)
 #else:
-   # proz = numberA * numberB * numberC
-    #print('Произвеление равно', proz)
+# proz = numberA * numberB * numberC
+#print('Произвеление равно', proz)
 
 
 #one = int(input('Введите первое число '))
@@ -154,21 +154,21 @@
 
 #if programm == "max":
 #    if two < one > three:
- #       print('Максимальное число', one) 
-  #  elif one < two > three:
-   #     print('Максимальное число', two)
-    #else:
-    #    print('Максимальное число', three)
+#       print('Максимальное число', one)
+#  elif one < two > three:
+#     print('Максимальное число', two)
+#else:
+#    print('Максимальное число', three)
 #elif programm == 'min':
- #   if two > one < three:
-   #     print('Минимальное число', one)
-  #  elif one > two < three:
-      #  print('Минимальное число ', two)
-    #else:
-   #     print('Минемальное число ', three)
+#   if two > one < three:
+#     print('Минимальное число', one)
+#  elif one > two < three:
+#  print('Минимальное число ', two)
+#else:
+#     print('Минемальное число ', three)
 #elif programm == 'mid':
-  #  midls = ((one + two + three) // 3)
-   # print('Среднее арефмитическое ', midls) 
+#  midls = ((one + two + three) // 3)
+# print('Среднее арефмитическое ', midls)
 
 
 #Модуль 2 часть 1  Задача 3
@@ -192,11 +192,11 @@
 #listWeek = input('Введите номер дня в неделе (1-7) ')
 
 #if listWeek == "1":
- #   print('Понедельник')
+#   print('Понедельник')
 #elif listWeek == '2':
 #    print('Вторник')
 #elif listWeek == '3':
- #   print('Среда')
+#   print('Среда')
 #elif listWeek == '4':
 #    print('Четверг')
 #elif listWeek == '5':
@@ -253,36 +253,36 @@
 
 #while numberOne1 != numberTwo2:
 #    if numberOne1 > numberTwo2:
- #       print(numberOne1, numberTwo2)
- #  elif numberOne1 < numberTwo2:
- #       print(numberTwo2, numberOne1)
- #   break
+#       print(numberOne1, numberTwo2)
+#  elif numberOne1 < numberTwo2:
+#       print(numberTwo2, numberOne1)
+#   break
 #else:
 #    numberOne1 == numberTwo2
- #   print('Числа равны')
+#   print('Числа равны')
 
 #Модуль 2 часть 3  Задача 1 ???
 
 #number = int(input('Введите число от 1 до 100 '))
 
 #for number in range (1,100):
- #   if number % 3 == 0:
+#   if number % 3 == 0:
 #       print('Fizz')
 #    elif number % 5 == 0:
 #       print('Buzz')
- #   else:
- #       print('Ошибка')
+#   else:
+#       print('Ошибка')
 
 
 #while number < 1 and number > 100:
-    #print('Ошибка')
-    #continue
-   # if number % 3 == 0:
-     #   print('Fizz')
-   # elif number % 5 == 0:
-   #     print('Buzz')
-    #elif number % 3 != 0 and number % 5 != 0:
-   #     print('Fizz Buzz')
+#print('Ошибка')
+#continue
+# if number % 3 == 0:
+#   print('Fizz')
+# elif number % 5 == 0:
+#     print('Buzz')
+#elif number % 3 != 0 and number % 5 != 0:
+#     print('Fizz Buzz')
 
 
 #Модуль 2 часть 3  Задача 2
@@ -291,7 +291,7 @@
 #oneNumber = int(input('Введите число '))
 
 #for a in range (0,7):
- #   print(oneNumber ** a)
+#   print(oneNumber ** a)
 
 #Модуль 2 часть 3  Задача 3
 
@@ -368,8 +368,8 @@
 #       counter += 1
 #print(counter)
 
-    #Модуль 3 часть 1  Задача 3
-        
+#Модуль 3 часть 1  Задача 3
+
 #range1 = int(input('введите число 1 '))
 #range2 = int(input('введите число 2 '))
 
@@ -430,7 +430,6 @@
 #    elif enterNumber == 7:
 #        print('Good bye') 
 #        break   
-           
 
 
 #Модуль 3 часть 2  Задача 4 
@@ -483,8 +482,8 @@
 #        coont += 1
 #for n in range(1000, 9999 +1):
 #    n = str(n)
- #   if n[0] != n[1] or n[0] != n[2] or n[0] != n[3] or n[1] != [2] or n[1] != n[3] or n[2] != n[3]:
- #       coont += 1
+#   if n[0] != n[1] or n[0] != n[2] or n[0] != n[3] or n[1] != [2] or n[1] != n[3] or n[2] != n[3]:
+#       coont += 1
 #print(coont)
 
 #Модуль 3 часть 3  Задача 4
@@ -504,15 +503,11 @@
 
 # rangeOne = int(input('Ввеите начало диапозона '))
 # rangeTwo = int(input('Ввеите конец диапозона '))
-  
+
 
 # for num in range(rangeOne,rangeTwo+1):
 #     for num2 in range(rangeOne,rangeTwo+1):
 #         if num % num2:
-        
-
-        
-
 
 
 #Модуль 3 часть 4  Задача 2
@@ -522,7 +517,6 @@
 #     for j in range(1,10 +1):
 #         print(n * j, end='\t')
 #     print('\n')
-
 
 
 #Модуль 3 часть 4  Задача 3
@@ -537,14 +531,10 @@
 #     print('\n')
 
 
-
 #Модуль 3 часть 4  Задача 4 ???
 
 
-
-
 # ПЗ Модуль 1 часть 3 Задание 1
-
 
 
 # myNum = int(input('Введите 2х значное число '))
@@ -585,7 +575,6 @@
 # print('Граус', myCel, 'Цельсия', 'Равен', myFa, 'Фарингейта')
 
 
-
 # ПЗ Модуль 2 часть 1 Задание 1
 
 # myNum = int(input('введите число '))
@@ -607,7 +596,6 @@
 #     if myNum % 7 != 0:
 #         print(myNum, 'Number is not multiple 7')
 
-    
 
 # ПЗ Модуль 2 часть 1 Задание 3
 
@@ -652,7 +640,7 @@
 #     aref = (myNumOne + myNumTwo) % 2
 #     print('Среднеаремитичесоке ', aref)
 
-    # ПЗ Модуль 2 часть 2 Задание 1
+# ПЗ Модуль 2 часть 2 Задание 1
 
 
 # myTime = int(input('Введите время в секундах '))
@@ -671,7 +659,6 @@
 
 
 # ПЗ Модуль 2 часть 2 Задание 2
-
 
 
 # myD = int(input('ВВедиет диметр окружности '))
@@ -699,12 +686,10 @@
 # print('Сумма заказа с учетом скидки будет ', sumSaly)
 
 
-
 # ПЗ Модуль 2 часть 2 Задание 4 ???
 
 # sizeGB = int(input('Введите размер файла в ГБ '))
 # speedNet = int(input('Введите скокрость  байт в секунду '))
-
 
 
 # ПЗ Модуль 2 часть 2 Задание 5
@@ -736,7 +721,6 @@
 #     print('Страка не палинром')
 
 
-
 # ДЗ Модуль 4 Часть 1 Задача 2
 
 # myText = input('введите текст ')
@@ -762,8 +746,6 @@
 #         count += 1
 
 # print(f'В тексте {count} предложений')
-
-
 
 
 # ДЗ Модуль 4 Часть 2 Задача 1
@@ -875,10 +857,146 @@
 # print(my_str[::-1])
 
 
-import re
+# import re
 
-my_str = input('Введите строку ')
+# my_str = input('Введите строку ')
 
-word = re.search('[a-z]+', my_str)
- 
-print(word)
+# word = re.search('[a-z]+', my_str)
+
+# print(word)
+
+
+# ДЗ Модуль 5 часть 1 задача 1
+
+# def my_txt():
+#      print('“Dont compare yourself with anyone in this world… \nif you do so, you are insulting yourself.” \n\t\t\t\t\tBill Gates')
+# my_txt()
+
+
+# ДЗ Модуль 5 часть 1 задача 2
+# def my_Fun(a,b):
+#     for n in range(a,b):
+#         if n % 2 == 0:
+#             print(n)
+# print(my_Fun(1,10))    
+
+# ДЗ Модуль 5 часть 1 задача 4
+
+
+# def minNumber(a,b,c,d,e,):
+#     min1 = min(a,b)
+#     min2 = min(c,d)
+#     min3 = min(min1,min2)
+#     return min(min3,e)
+
+# a = int(input('a = '))
+# b = int(input('b = '))
+# c = int(input('c = '))
+# d = int(input('d = '))
+# e = int(input('e = '))
+# print(minNumber(a,b,c,d,e))
+
+# ДЗ Модуль 5 часть 1 задача 5
+
+# def someFunc(a:int,b:int)-> int:
+#     res = 1
+#     if a > b:
+#         a,b = b,a
+#         for n in range(a,b+1):
+#             res *= n
+#         return res
+#     elif a < b:
+#         for n in range(a,b+1):
+#             res *= n
+#         return res
+# a = int(input('1 '))
+# b = int(input('2 '))
+# print(someFunc(a,b))
+
+
+# ДЗ Модуль 5 часть 1 задача 6
+
+# def lenNumber(a):
+#     return len(a)
+# a = input("enter number ")
+# print(lenNumber(a))
+
+# # ДЗ Модуль 5 часть 1 задача 7
+
+# def my_poli(a:list):
+#     if a == a[::-1]:
+#         print("Строка полиндром")
+#     else:
+#         print('Строка не полиндром ')
+# print(my_poli(a=input('enter number ')))
+
+
+# # ДЗ Модуль 5 часть 2 задача 1
+
+# def my_func(a:int):
+#     p = 1
+#     for i in a:
+#         i = int(i)
+#         p*=i
+#         print(p, type(i), type(a),type(p))
+# a = input('enter ').split()
+# my_func(a)
+
+    
+
+# ДЗ Модуль 5 часть 2 задача 2
+
+# def min_number(a:int):
+#     """Функция выполняет поиск 
+#         минимального числа из списка целых
+#     """
+#     min1 = min(a)
+#     print(min1,type(a),type(min1))
+# a = input('enter ').split()
+# min_number(a)
+
+# ДЗ Модуль 5 часть 2 задача 3
+
+# def int_praim(a:int):
+    
+#     for i in a:
+#         count = 0
+#         i = 2
+#         i = int(i)
+#         if i % i and  i % 1:
+#             count+=1
+#         print(count,type(i),type(a))
+#     else:
+#         print('number not praim')
+# a = input('enter ').split()
+# int_praim(a)
+
+
+
+# ДЗ Модуль 5 часть 2 задача 4
+
+
+
+# ДЗ Модуль 5 часть 2 задача 5
+
+# def my_sumFunc(a,b):
+#     c = a + b
+#     return c
+# a = input('enter1 ')
+# b = input('enter2 ')
+# print(my_sumFunc(a,b))
+
+
+# ДЗ Модуль 5 часть 2 задача 6
+
+
+def stepen_el(a:int):
+    
+    for i in a:
+      i ** 2
+      new_list = []
+      i = int(i)
+      print( new_list.append(int(i)), i, a)
+a = input('enter ').split()
+# b = int(input('enter stepen '))
+stepen_el(a)
