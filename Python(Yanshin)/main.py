@@ -975,6 +975,22 @@
 
 # ДЗ Модуль 5 часть 2 задача 4
 
+# Напишите функцию, удаляющую из списка целых
+# некоторое заданное число. Из функции нужно вернуть
+# количество удаленных элементов.
+
+# def remove_func(a):
+#     count = 0
+#     new_List = list(a)
+#     for n in a:
+#         n = input('delit numb ')
+#         new_List.remove(n)
+#         count += 1
+#     print(count)
+        
+# a = input('enter list ').split()
+# remove_func(a)        
+    
 
 
 # ДЗ Модуль 5 часть 2 задача 5
@@ -987,16 +1003,138 @@
 # print(my_sumFunc(a,b))
 
 
-# ДЗ Модуль 5 часть 2 задача 6
+# # ДЗ Модуль 5 часть 2 задача 6
+
+# Напишите функцию, высчитывающую степень каждого
+# элемента списка целых. Значение для степени передаётся
+# в качестве параметра, список тоже передаётся в качестве
+# параметра. Функция возвращает новый список, содержа-
+# щий полученные результаты.
 
 
-def stepen_el(a:int):
+# def stepen_el(a,b):
     
-    for i in a:
-      i ** 2
-      new_list = []
-      i = int(i)
-      print( new_list.append(int(i)), i, a)
-a = input('enter ').split()
+#     new_list = []
+#     for i in a:
+#      new_list.append(int(i) ** b)
+#     print(new_list,a)
+      
+# a = input('enter ').split()
 # b = int(input('enter stepen '))
-stepen_el(a)
+# print(stepen_el(a,b))
+
+
+# ДЗ Модуль 5 часть 2 задача 5
+
+# Напишите функцию, которая получает два списка в
+# качестве параметра и возвращает список, содержащий
+# элементы обоих списков.
+
+
+# def my_dubl_list(a,b):
+#     """Данная функция получает 2 списка 
+#     и возвращает содержащие элементы обоих списков"""
+#     three_list = list(a)+list(b)
+#     print(three_list)
+# a = input('enter list 1 ').split()
+# b = input('enter list 2 ').split()
+# my_dubl_list(a,b)
+
+# ДЗ Модуль 5 часть 3 задача 1????
+
+# Написать рекурсивную функцию нахождения наи-
+# большего общего делителя двух целых чисел.
+
+# import re
+
+# def re_serch_max():
+#     """Данная функция метод рекурсии находит 
+#     наибольший общий делитель целых чисел"""
+
+# ДЗ Модуль 7 часть 1 задача 1
+
+# Необходимо отсортировать первые две трети списка
+# в порядке возрастания, если среднее арифметическое
+# всех элементов больше нуля; иначе — лишь первую треть.
+# Остальную часть списка не сортировать, а расположить
+# в обратном порядке.
+
+# def sotrt_list(a:list, b:int):
+#     """Данная функция спртирует список в порядке 
+#     возрвстания, если среднее арефмитическое всех элементов > 0
+#     иначе сортирует только первую часть """
+#     new_avg = len(a) / float(b)
+#     new_list = []
+#     last = 0.0
+
+#     while last < len(a):
+#         new_list.append(a[int(last): int(last + new_avg)])
+#         last += new_avg
+#     sum1 = 0
+#     sum2 = 0
+#     sum3 = 0
+#     new_arr = []
+#     arr1 = []
+#     for i in new_list[0]:
+#         arr1.append(i)
+#         new_arr.append(i)
+#         sum1 += int(i)
+#     for i in new_list[1]:
+#         new_arr.append(i)
+#         sum2 += int(i)
+#     for i in new_list[2]:
+#         sum3 += int(i)
+#     sum_all = sum1+sum2+sum3
+#     print(sum1,sum2,sum3, new_arr, arr1, sum_all, a, new_list)
+
+#     if sum_all > 0:
+#         new_arr.sort()
+#         print(new_arr)
+#     else:
+#         arr1.sort()
+#         print(arr1)
+# a = input('enter ').split()
+# b = int(input('enter number '))
+# sotrt_list(a,b)
+
+
+
+
+# ДЗ Модуль 7 часть 1 задача 2
+
+# Написать программу «успеваемость». Пользователь
+# вводит 10 оценок студента. Оценки от 1 до 12 Реализовать
+# меню для пользователя:
+# ■ Вывод оценок (вывод содержимого списка);
+# ■ Пересдача экзамена (пользователь вводит номер эле-
+# мента списка и новую оценку);
+# ■ Выходит ли стипендия (стипендия выходит, если
+# средний бал не ниже 10.7);
+# ■ Вывод отсортированного списка оценок: по возрас-
+# танию или убыванию.
+
+
+# def academic_perfomence(a):
+#     print(a)
+
+#     total = 0
+
+#     index_list = int(input('enter index '))
+#     ball = int(input('enter ball '))
+#     a[index_list] = ball
+#     print(a)
+
+
+#     for number in a:
+#         total += int(number)
+#         total_ball = (total / len(a))
+#     if total_ball >= 10.7:
+#         print('money is OK ')
+#     else:
+#         print('no money ')
+
+#     a.sort()
+#     print(a[::-1], a)
+
+# a = list(input('enter ball ').split())
+# print(academic_perfomence(a))
