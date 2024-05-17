@@ -1138,3 +1138,38 @@
 
 # a = list(input('enter ball ').split())
 # print(academic_perfomence(a))
+
+
+# ДЗ Модуль 7 часть 1 задача 1
+
+# Необходимо отсортировать первые две трети списка
+# в порядке возрастания, если среднее арифметическое
+# всех элементов больше нуля; иначе — лишь первую треть.
+# Остальную часть списка не сортировать, а расположить
+# в обратном порядке.
+
+def sotrt_list(a:list):
+    """Данная функция спртирует список в порядке 
+    возрвстания, если среднее арефмитическое всех элементов > 0
+    иначе сортирует только первую часть """
+    sum=0
+    for x in a:
+      sum+=x
+    avg = sum/len(a)
+    print(avg)
+
+    limit = 0
+    if avg>0:
+      limit = 2*int(len(a)/3)
+    else:
+      limit = int(len(a)/3)
+         
+    first_arr = a[:limit]
+    second = a[limit:]
+    first_arr.sort()
+    second.reverse()
+    return [*first_arr,*second]
+    
+
+a = [x for x in range(-100,90,3)]
+print(sotrt_list(a))
