@@ -1173,3 +1173,774 @@ def sotrt_list(a:list):
 
 a = [x for x in range(-100,90,3)]
 print(sotrt_list(a))
+
+# ДЗ Модуль 7 часть 2 задача 2
+
+# Есть четыре списка целых. Необходимо объединить
+# в пятом списке только те элементы, которые уникальны
+# для каждого списка. Полученный результат в зависимости
+# от выбора пользователя отсортировать по убыванию или
+# возрастанию. Найти значение, введенное пользователем,
+# с использованием бинарного поиска.
+
+
+
+# a = list(input('enter number1 '))
+# b = list(input('enter number2 '))
+# c = list(input('enter number3 '))
+# d = list(input('enter number4 '))
+# req = input('Выбрать сортировку возрастание/убывание 1/0 ')
+
+# e = []
+
+# for x in a:
+#     if x not in e:
+#         e.append(x)
+# for x1 in b:
+#     if x1 not in e:
+#         e.append(x1)
+# for x2 in c:
+#     if x2 not in e:
+#         e.append(x2)
+# for x3 in d:
+#     if x3 not in e:
+#         e.append(x3)
+
+# if req == 1:
+#     e.sort()
+#     print(e)
+# else:
+#     e.sort(reverse=True)
+#     print(e)
+
+
+# Модуль 8 часть 1 задание 1
+
+# Есть три кортежа целых чисел необходимо найти
+# элементы, которые есть во всех кортежах.
+
+
+# cor1 = (1,2,3,4,5)
+# cor2 = (1,5,6,1,8)
+# cor3 = (1,2,5,1,2)
+
+# serch_elements_tuple = set(cor1).intersection(set(cor2), set(cor3))
+
+# result_tuple = tuple(serch_elements_tuple)
+
+# print('Общие элементы в кортежже: ', result_tuple)
+
+
+# Модуль 8 часть 1 задание 2
+
+# Есть три кортежа целых чисел необходимо найти
+# элементы, которые есть во всех кортежах.
+
+# cor1 = (1,2,3,4,5)
+# cor2 = (1,5,6,1,8)
+# cor3 = (1,2,5,1,2)
+
+# unicals_element = set(cor1) ^ set(cor2) ^ set(cor3)
+
+# tuple_element_result = tuple(unicals_element)
+
+# print('уникальные элементы в кортеже: ', tuple_element_result)
+
+
+# Модуль 8 часть 1 задание 3
+
+# Есть три кортежа целых чисел необходимо найти
+# элементы, которые уникальны для каждого списка.
+
+
+# cor1 = (1,2,3,4,5)
+# cor2 = (1,5,6,1,8)
+# cor3 = (1,2,5,1,2)
+
+# result_tuple = ()
+
+# for i in range(min(len(cor1), len(cor2), len(cor3))):
+#     if cor1[i] == cor2[i] == cor3[i]:
+#         result_tuple += (cor1[i], )
+# print('Элементы уникальные для каждого списка ', result_tuple)
+
+
+
+# определение функции декоратора
+# def select(input_func):    
+#     def output_func():      # определяем функцию, которая будет выполняться вместо оригинальной
+#         print("*****************")  # перед выводом оригинальной функции выводим всякую звездочки
+#         input_func()                # вызов оригинальной функции
+#         print("*****************")  # после вывода оригинальной функции выводим всякую звездочки
+#     return output_func     # возвращаем новую функцию
+ 
+# # определение оригинальной функции
+# @select         # применение декоратора select
+# def hello():
+#     print("Hello METANIT.COM")
+ 
+# # вызов оригинальной функции
+# hello()
+
+
+
+# модуль 8 часть 2 задание 1
+
+# Создайте программу, хранящую информацию о вели-
+# ких баскетболистах. Нужно хранить ФИО баскетболиста и
+# его рост. Требуется реализовать возможность добавления,
+# удаления, поиска, замены данных. Используйте словарь
+# для хранения информации.
+
+# players = {}
+# def add_players():
+#     name = input('Введите ФИО спортсмена ')
+#     height = float(input('Введите его рост '))
+#     players[name]= height
+#     print('Спортмен добавлен ')
+#     print(players)
+#     # add_players()
+    
+    
+
+# def del_player():
+#     name = input('Введите ФИО что бы удалить игрока ')
+#     if name in players:
+#         del players[name]
+#         print(players)
+#     else:
+#         print('Игрок не найден')
+
+
+# def find_player():
+#     name = input('Введите ФИО спортсмена для поиска ')
+#     if name in players:
+#         height  = players[name] 
+#         print(f"Рост баскетболиста {name}:{height} см")
+#     else:
+#         print('Спротсмен не найден')
+
+# def replace_player():
+#     name = input('Введите ФИО спортсмена данные которого необходимо заменить ')
+#     if name in players:
+#         height = float(input('Введите новый рост спортсмена '))
+#         players[name] = height
+#         print('Данные успешно изменены ')
+#         print(players)
+#     else:
+#         print('спортмен не найден ')
+
+# add_players()
+# find_player()
+# replace_player()
+# del_player()
+
+
+
+
+# модуль 8 часть 2 задание 2
+
+# Создайте программу «Англо-французский словарь».
+# Нужно хранить слово на английском языке и его перевод
+# на французский. Требуется реализовать возможность до-
+# бавления, удаления, поиска, замены данных. Используйте
+# словарь для хранения информации.
+
+
+# english_frach_directori = {}
+
+# def add_word_direct():
+#     eng_word = input('Введите слово на Английском ')
+#     fr_word = input('Введите перевод на французском ')
+#     english_frach_directori[eng_word] = fr_word
+#     print('Слово добавленов словарь')
+
+# def del_word_direct():
+#     eng_word = input('Введите английское слово для удаления ')
+#     if eng_word in english_frach_directori:
+#         del english_frach_directori[eng_word]
+#     else:
+#         print('Слово не найдено ')
+
+# def find_word_direct():
+#     eng_word = input('введите английское слово для поиска ')
+#     if eng_word in english_frach_directori:
+#         fr_word = english_frach_directori[eng_word]
+#         print(f'Найдено слово {eng_word}:{fr_word}')
+#     else:
+#         print('Слово не найдено ')
+
+
+# def replase_word_direct():
+#     eng_word = input('Введите слово, что бы заменить ')
+#     if eng_word in english_frach_directori:
+#         fr_word = input('Введите новый перевод ')
+#         english_frach_directori[eng_word] = fr_word
+#         print('Данные успешно изменены ')
+#     else:
+#         print('Слово не найдено ')
+
+
+# модуль 8 часть 2 задание 3
+
+# Создайте программу «Фирма». Нужно хранить ин-
+# формацию о человеке: ФИО, телефон, рабочий email,
+# название должности, номер кабинета, skype. Требуется
+# реализовать возможность добавления, удаления, поис-
+# ка, замены данных. Используйте словарь для хранения
+# информации.
+
+# bisness_firma = {}
+
+# def add_firm_Worker():
+# """Эта функция добаляет нового сотрудника"""
+#     name = input('Введите ФИО сотрудника')
+#     fone = int(input('Укажите телефон сотрудника '))
+#     worck_mail = input('Укажите электорнную почту ')
+#     job_title = input('Укажите должность сотрудника ')
+#     skype_worker = input('Укажите скайп ')
+#     bisness_firma[name]=fone,worck_mail,job_title,skype_worker
+#     print("Сотрудник добавлен ")
+
+# def del_firm_Worker():
+# """Эта функция удаляет сотрудника"""
+#     name = input('Введите ФИО сотрудника ')
+#     if name in bisness_firma:
+#         del bisness_firma[name]
+#         print('Сотрудник удален ')
+#     else:
+#         print('Сотрудник не найден ')
+
+# def find_firm_worker():
+# """Эта функция ищет сотрудника """
+#     name = input('Введите ФИО сотрудника')
+#     if name in bisness_firma:
+#         fone = bisness_firma[name]
+#         worck_mail = bisness_firma[name]
+#         job_title = bisness_firma[name]
+#         skype_worker = bisness_firma[name]
+#         print(f'Найден сотрудник {name}:{fone},{worck_mail},{job_title},{skype_worker}')
+#     else:
+#         print('Сотрудник не найден ')
+
+# def replace_firm_worker():
+#  '''Эта функция изменяет внутренние данные сотрудника'''
+#     name = input('Введите ФИО сотркдника ')
+#     if name in bisness_firma:
+#         fone = int(input('Укажите телефон сотрудника '))
+#         worck_mail = input('Укажите электорнную почту ')
+#         job_title = input('Укажите должность сотрудника ')
+#         skype_worker = input('Укажите скайп ')
+#         bisness_firma[name]=fone,worck_mail,job_title,skype_worker
+#         print('Данные успешно обновлены ')
+#     else:
+#         print('Сотрудник не найден ')
+
+
+# модуль 8 часть 2 задание 4
+
+# Создайте программу «Книжная коллекция». Нужно
+# хранить информацию о книгах: автор, название книги,
+# жанр, год выпуска, количество страниц, издательство.
+# Требуется реализовать возможность добавления, удале-
+# ния, поиска, замены данных. Используйте словарь для
+# хранения информации.
+
+
+# book_colection = {}
+
+# def add_book():
+#     author = input('Укажите ФИО автора книги ')
+#     name_book = input('Укажите название книги')
+#     genre = input('Укажите жарн книги ')
+#     year_of_issue = input('Укажите год издания ')
+#     number_of_pages = int(input('Ввежите колл-во страниц'))
+#     book_colection[author] = name_book,genre,year_of_issue,number_of_pages
+#     print('Книга Добавлена ')
+
+# def del_book():
+#     author = input('Введите ФИО автора ')
+#     if author in book_colection:
+#         del book_colection[author]
+#         print('Книга удалена ')
+#     else:
+#         print('Книга не найдена ')
+
+# def find_book():
+#     author = input('Введите ФИО автора ')
+#     if author in book_colection:
+#         name_book = book_colection[author]
+#         genre = book_colection[author]
+#         year_of_issue = book_colection[author]
+#         number_of_pages = book_colection[author]
+#         print(f'Найдено по запросу {author}:{name_book},{genre},{year_of_issue},{number_of_pages}')
+#     else:
+#         print('Книга не найдена ')
+
+# def replace_book():
+#     author = input("Введите ФИО автора ")
+#     if author in book_colection:
+#         name_book = input('Укажите название книги')
+#         genre = input('Укажите жарн книги ')
+#         year_of_issue = input('Укажите год издания ')
+#         number_of_pages = int(input('Ввежите колл-во страниц'))
+#         book_colection[author] = name_book,genre,year_of_issue,number_of_pages
+#         print('Данные успешно изменены ')
+#     else:
+#         print('Книга не найдена')
+
+
+
+
+# Открытие потоков:
+
+# encoding - указывает тип кодировки (например UTF-8 при работе с тексовыми файлами)
+# file - путь файла который будет связан с потоком 
+# mode - задает режим открытия для этого потока (например r - чтение ), w - запись, а - дозапись,
+# r+ - чтение и обновление, w+ - запись и обновление 
+
+# Аргументы режима могут быть опущенны, тогда принимаються значение по умолчанию:
+# режим открытия - r (чтение )
+# encoding  - зависит от используемой платформы
+
+# stream = open(file, mode = 'r', encoding = None)   
+
+# try:
+#     file = open('./заметка.txt', 'rt')
+#     print(file.read())
+#     file.close()
+
+
+# except Exception as exc:
+#     print("Cannot open the file:", exc)
+
+
+# import sys
+
+# sys.stdin
+# ▷ stdin (standard input — стандартный ввод)  - поток stdin обычно связан с  клавиатурой, пред-
+# варительно открыт для чтения и рассматривается как основной источник данных для запущенных программ;
+# ▷ хорошо известная функция input () по умолчанию читает данные из stdin.
+    
+# ■ sys.stdout - stdout (standard output — стандартный вывод)поток stdout обычно связан с экраном, предвари-
+# тельно открыт для записи и рассматривается как основной объект для вывода данных, запущенных программой;
+# ▷ хорошо известная функция print() выводит данные в поток stdout.
+    
+# ■ sys.stderr
+# ▷ stderr (standard error output — стандартный поток ошибок) - поток stderr обычно связан с экраном, предварительно
+# открыт для записи и рассматривается как основное место, куда запущенная программа должна отправлять
+# информацию об ошибках, возникших при ее работе; мы не представили метода для отправки данных в этот
+# поток (но обещаем это сделать в ближайшее время). разделение потоков на stdout (полезные результаты,
+# полученные программой) и stderr (сообщения об ошибках, безусловно полезные, но они не выводят
+# результаты) дает возможность перенаправить эти два типа информации разным получателям. Более под-
+# робное обсуждение этого вопроса выходит за рамки нашего курса. Руководство по операционной системе
+# даст вам больше информации по этим вопросам.
+    
+
+# from os import strerror
+
+# try:
+#     cnt = 0
+#     s = open('заметка.txt', 'rt')
+#     ch = s.read(1)
+#     while ch != '':
+#         print(ch, end='')
+#         cnt += 1
+#         ch = s.read(1)
+#     s.close()
+#     print("\n\nCharacters in file: ", cnt)
+
+# except IOError as e:
+#     print("I/O error occurred: ", strerror(e.errno))
+
+# Программа прочитала заметку и посчитала символы
+    
+
+
+# Упрощенный метод записи 
+    
+
+# try:
+#     for line in open('./заметка.txt', 'rt'):
+#         print(line, end='')
+# except Exception as exc:
+#     print("Cannot open the file: ", exc)
+
+
+# Програма дописать в имеющийся текстовый файл и прочитать его 
+# try:
+
+#     s = open('заметка.txt', 'at')
+#     s.write('new sting\n')
+#     s.close()
+
+# except Exception as exc:
+#     print("Cannot open the file: ", exc)
+        
+# try:
+#     for line in open('./заметка.txt', 'rt'):
+#         print(line, end='')
+# except Exception as exc:
+#     print("Cannot open the file: ", exc)
+
+
+
+# Модуль 9 часть 1 Задание 1
+
+# Дано два текстовых файла. Выяснить, совпадают ли
+# их строки. Если нет, то вывести несовпадающую строку
+# из каждого файла.
+
+# try:
+#     with open('txt1.txt', 'r') as txt1, open('txt2.txt', 'r') as txt2:
+#         lines1 = txt1.readlines()
+#         lines2 = txt2.readlines()
+
+#         if len(lines1) != len(lines2):
+#             print("Количество строк во входных файла не совпадает.")
+        
+
+#         for line1, line2 in zip(lines1, lines2):
+#             if line1.strip()!= line2.strip():
+#                 print(f"Несовпадающие строки:\n{line1.strip()}\n{line2.strip()}")
+# except FileNotFoundError:
+#     print("Один или оба из входных файла не найдены.")
+
+
+# Модуль 9 часть 1 Задание 2
+
+# Дан текстовый файл. Необходимо создать новый файл
+# и записать в него следующую статистику по исходному
+# файлу:
+# ■ Количество символов;
+# ■ Количество строк;
+# ■ Количество гласных букв;
+# ■ Количество согласных букв;
+# ■ Количество цифр.
+
+
+# try:
+#     with open('txt1.txt', 'r') as txt1_file, open('newfile.txt', 'w') as newfile_file:
+#         symbols_count = 0
+#         lines_count = 0
+#         vowels_count = 0
+#         consonants_count = 0
+#         digits_count = 0
+
+#         for line in txt1_file:
+#             lines_count += 1
+#             symbols_count += len(line.strip())
+
+#             for char in line.strip():
+#                 if char.isalpha():
+#                     if char.lower() in 'аоуэиыеёюя':
+#                         vowels_count += 1
+#                     else:
+#                         consonants_count += 1
+#                 elif char.isdigit():
+#                     digits_count += 1
+        
+
+#         newfile_file.write(f"Количество символов: {symbols_count}\n")
+#         newfile_file.write(f"Количество строк: {lines_count}\n")
+#         newfile_file.write(f"Количество гласных букв: {vowels_count}\n")
+#         newfile_file.write(f"Количество согласных букв: {consonants_count}\n")
+#         newfile_file.write(f"Количество цифр: {digits_count}\n")
+        
+
+# except Exception as e:
+#     print("Ошибка:", e)
+
+# try:
+#     with open('newfile.txt', 'r') as newfile_file:
+#         print("Статистика из исходного файла:")
+#         for line in newfile_file:
+#             print(line.strip())
+# except Exception as e:
+#         print("Ошибка при чтении из нового файла:", e)
+
+
+# Модуль 9 часть 1 Задание 3
+
+# Дан текстовый файл. Удалить из него последнюю
+# строку. Результат записать в другой файл.
+
+# try:
+#     with open('txt1.txt', 'r') as txt1_file, open('newfile.txt', 'w') as newfile_file:
+#         lines = txt1_file.readlines()
+#         newfile_file.writelines(lines[:-1])
+# except Exception as e:
+#     print("Ошибка:", e)
+
+# try:
+#     with open('newfile.txt', 'r') as newfile_file:
+#         print("Статистика из исходного файла:")
+#         for line in newfile_file:
+#             print(line.strip())
+# except Exception as e:
+#         print("Ошибка при чтении из нового файла:", e)
+
+
+# Модуль 9 часть 1 Задание 4
+
+# Дан текстовый файл. Найти длину самой длинной
+# строки.
+
+
+# try:
+#     with open('txt1.txt', 'r') as txt1_file:
+#         max_length = 0
+#         for line in txt1_file:
+#             length = len(line.strip())
+#             if length > max_length:
+#                 max_length = length
+
+#     print("Длина самой длинной строки:", max_length)
+# except Exception as e:
+#     print("Ошибка:", e)
+
+
+# Модуль 9 часть 1 Задание 5
+
+# Дан текстовый файл. Посчитать сколько раз в нем
+# встречается заданное пользователем слово.
+
+
+# word = input("Введите слово: ")
+
+# try:
+#     with open('txt1.txt', 'r') as txt1_file:
+#         word_count = 0
+#         for line in txt1_file:
+#             words = line.strip().split()
+#             for w in words:
+#                 if w.lower() == word.lower():
+#                     word_count += 1
+#         print(f"Слово '{word}' встречается {word_count} раз.")
+# except Exception as e:
+#     print("Ошибка:", e)
+
+
+# Модуль 9 часть 1 Задание 6
+
+# Дан текстовый файл. Найти и заменить в нем задан-
+# ное слово. Что искать и на что заменять определяется
+# пользователем.
+
+
+# word_to_find = input("Введите слово для поиска: ")
+# word_to_replace = input("Введите слово для замены: ")
+
+
+# try:
+#     with open('txt1.txt', 'r') as txt1_file, open('newfile.txt', 'w') as newfile_file:
+#         for line in txt1_file:
+#             newfile_file.write(line.replace(word_to_find, word_to_replace))
+#         print("Замены произведены.")
+# except Exception as e:
+#     print("Ошибка:", e)
+
+# Модуль 9 часть 2 задание 1
+
+# Напишите информационную систему «Сотрудники».
+# Программа должна обеспечивать ввод данных, редактирование данных сотрудника, удаление сотрудника, поиск
+# сотрудника по фамилии, вывод информации обо всех сотрудниках, указанного возраста, или фамилия которых
+# начинается на указанную букву. Организуйте возможность сохранения найденной информации в файл. Также весь
+# список сотрудников сохраняется в файл (при выходе из программы — автоматически, в процессе исполнения
+# программы — по команде пользователя). При старте программы происходит загрузка списка сотрудников из
+# указанного пользователем файла.
+
+# def staff():
+
+#     def create_empty_file():
+#         with open('staff_list.txt', 'at') as file:
+#             file.write('')
+#             print('Пустой файл staff_list.txt создан.')
+#     create_empty_file()
+
+#     def add_staff_list():
+#         name = input('Введите имя сотрудника: ')
+#         surname = input('Введите фамилию сотрудника: ')
+#         age = int(input('Введите возраст сотрудника: '))
+#         position = input('Введите должность сотрудника: ')
+#         with open('staff_list.txt', 'at') as file:
+#             file.write(f'{name}, {surname}, {age}, {position}\n')
+#             file.close()
+#         print('Сотрудник добавлен.')
+#         try:
+#             with open('staff_list.txt', 'r') as list:
+#                 read_list = list.read()
+#             print(read_list, 'Список сотрудников загружен.')
+#         except Exception as e:
+#             print('Ошибка при загрузке списка сотрудников:', e)
+#     add_staff_list()
+
+
+#     def find_and_edit_in_file():
+#         search_surname  = input('Введите фамилию для поиска: ')
+#         try:
+#             with open('staff_list.txt', 'r') as file:
+#                 for line in file:
+#                     if search_surname  in line:
+#                         print(line)
+#         except Exception as e:
+#             print('Ошибка при поиске:', e)
+#         surname  = input('Введите фамилию для замены: ')
+#         name = input('Введите имя для замены: ')
+#         age = int(input('Введите возраст для замены: '))
+#         position = input('Введите должность для замены: ')
+#         with open('staff_list.txt', 'r') as file:
+#             lines = file.readlines()
+#             with open('staff_list.txt', 'w') as file:
+#                 for line in lines:
+#                     if search_surname  in line:
+#                         file.write(f'{name}, {surname}, {age}, {position}\n')
+#                     else:
+#                         file.write(line)
+#                         print('Сотрудник изменен.')
+#     find_and_edit_in_file()
+
+#     def dell_staff():
+#         surname  = input('Введите фамилию для удаления: ')
+#         with open('staff_list.txt', 'r') as file:
+#             lines = file.readlines()
+#         with open('staff_list.txt', 'w') as file:
+#             for line in lines:
+#                 if surname not in line:
+#                     file.write(line)
+#                     print('Сотрудник удален.')
+#         try:
+#             with open('staff_list.txt', 'r') as list:
+#                 read_list = list.read()
+#             print(read_list, 'Список сотрудников загружен.')
+#         except Exception as e:
+#             print('Ошибка при загрузке списка сотрудников:', e)
+#     dell_staff()
+
+#     def find_staff():
+#         search_surname  = input('Введите фамилию для поиска: ')
+#         try:
+#             with open('staff_list.txt', 'r') as file:
+#                 for line in file:
+#                     if search_surname  in line:
+#                         print(line)
+#         except Exception as e:
+#             print('Ошибка при поиске:', e)
+#     find_staff()
+
+#     def find_by_surname():
+#         surname = input('Введите фамилию: ')
+#         try:
+#             with open('staff_list.txt', 'r') as file:
+#                 for line in file:
+#                     if surname in line:
+#                         print(line)
+#         except Exception as e:
+#             print('Ошибка при поиске:', e)
+#         print('Найденные сотрудники:')
+        
+#         def find_by_age():
+#             age = int(input('Введите возраст: '))
+#             try:
+#                 with open('staff_list.txt', 'r') as file:
+#                     for line in file:
+#                         staff_data = line.strip().split(', ')
+#                         if int(staff_data[2]) == age:
+#                             print(line)
+#             except Exception as e:
+#                 print('Ошибка при поиске:', e)
+#             print('Найденные сотрудники:')
+        
+
+#             def find_by_letter():
+#                 letter = input('Введите букву для поиска: ')
+#                 try:
+#                     with open('staff_list.txt', 'r') as file:
+#                         for line in file:
+#                             staff_data = line.strip().split(', ')
+#                             if staff_data[1].startswith(letter):
+#                                 print(line)
+#                 except Exception as e:
+#                     print('Ошибка при поиске:', e)
+#                 print('Найденные сотрудники:')
+#             find_by_letter()
+#         find_by_age()
+#     find_by_surname()
+
+
+#     def save_to_file():
+#         try:
+#             with open('staff_list.txt', 'r') as file:
+#                 read_list = file.read()
+#             with open('saved_staff_list.txt', 'w') as file:
+#                 file.write(read_list)
+#             print('Список сотрудников сохранен в saved_staff_list.txt.')
+#         except Exception as e:
+#             print('Ошибка при сохранении списка сотрудников:', e)
+#     save_to_file()
+
+
+#     def load_from_file():
+#         try:
+#             with open('staff_list.txt', 'r') as file:
+#                 read_list = file.read()
+#             print('Список сотрудников загружен из staff_list.txt.')
+#             return read_list
+#         except Exception as e:
+#             print('Ошибка при загрузке списка сотрудников:', e)
+#             return None
+
+#     def main():
+#         loaded_list = load_from_file()
+#         while True:
+#             print('\nМеню:')
+#             print('1. Добавить сотрудника')
+#             print('2. Изменить информацию о сотруднике')
+#             print('3. Удалить сотрудника')
+#             print('4. Найти сотрудника по фамилии')
+#             print('5. Сохранить список сотрудников в staff_list.txt')
+#             print('6. Загрузить список сотрудников из staff_list.txt')
+#             print('7. Выйти')
+#             try:
+#                 choice = int(input('Выберите задачу: '))
+#                 if choice in range(1,8 ):
+#                     if choice == 1:
+#                         add_staff_list()
+#                         loaded_list = load_from_file()
+#                         print('Список сотрудников загружен из staff_list.txt.')
+#                     elif choice == 2:
+#                         find_and_edit_in_file()
+#                         loaded_list = load_from_file()
+#                         print('Список сотрудников загружен из staff_list.txt.')
+#                     elif choice == 3:
+#                         dell_staff()
+#                         loaded_list = load_from_file()
+#                         print('Список сотрудников загружен из staff_list.txt.')
+#                         print('Найденные сотрудники:')
+#                     elif choice == 4:
+#                         find_by_surname()
+#                         loaded_list = load_from_file()
+#                         print('Список сотрудников загружен из staff_list.txt.')
+#                         print('Найденные сотрудники:')
+#                     elif choice == 5:
+#                         save_to_file()
+#                         print('Список сотрудников сохранен в staff_list.txt.')
+#                     elif choice == 6:
+#                         loaded_list = load_from_file()
+#                         print('Список сотрудников загружен из staff_list.txt.')
+#                         print('Найденные сотрудники:')
+#                     elif choice == 7:
+#                         break
+#                     else:
+#                         print('Неверный ввод. Попробуйте снова.')
+#                 if loaded_list is None:
+#                     print('Список сотрудников:')
+#                     print(loaded_list)
+#             except ValueError:
+#                 print('Неверный ввод. Попробуйте снова.')
+#         print('Программа завершена.')
+#     main()
+# staff()
+
+
+
